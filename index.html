@@ -1,0 +1,50 @@
+E html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="dino"></div>
+        <div id="cactus"></div>
+        <div id="ground"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>body {
+    overflow: hidden; /* Esconde a barra de rolagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#game-container {
+    width: 600px;
+    height: 150px;
+    border-bottom: 2px solid #333; /* Chão */
+    position: relative;
+    overflow: hidden; /* Garante que os elementos fora da área do jogo sejam escondidos */
+    background-color: #fff;
+}
+
+#dino {
+    width: 40px;
+    height: 40px;
+    background-color: green; /* Representa o dinossauro */
+    position: absolute;
+    bottom: 0; /* Começa no chão */
+    left: 50px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-color: brown; /* Representa o cacto */
